@@ -2,9 +2,9 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "database-1.c920o00syb4q.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "Colombia123_";
 $database = "users"; 
 $conexion = mysqli_connect($servername, $username, $password, $database);
 
