@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* Centrar Body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../imagenes/Banda\ ancha.jpg");
+    /*background: url("../imagenes/Banda\ ancha.jpg");*/
+    background-size: cover;
+}
+
+.container-form{
+    display: flex;   /*Se posiciona Bienvenido al lado de Crear cuenta*/
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 550px;  /* Altura del box*/
+    max-width: 900px;  /* Ancho del box*/
+    transition: all 1s ease;  /*Transición de 1 segundo que entra desde arriba*/
+    margin: 10px;
+}
+
+.information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #c7eef3;
+    border-top-left-radius: 20px;  /* redondea las esquinas superiores*/
+    border-bottom-left-radius: 20px;  /* Redondea las esquinas inferiores*/
+}
+
+.info-childs{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2{
+    font-size: 2.5rem;
+    color: #555;
+}
+
+.info-childs p{
+    margin-top: 30px;
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;    /* El primer pading (10px) es para arriba y abajo y el segundo pading (20px) es para ambos costados*/
+    color: #9191bd;
+    cursor: pointer;     /* Al pasar el mouse, se comvierte en una mano*/
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover{   /* Al pasar el mouse por encima, se activa la transición*/
+    background-color: #9191bd;
+    border: none;
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    /*   Ejes:  x, y, transparencia */ 
+}
+
+.form-information{
+    /*Centrar contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: whitesmoke;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs{
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p{
+    color: #555;
+}
+
+.icons{
+    margin: 15px 0;
+}
+
+.icons i{
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #9191bd;
+    border: solid thin #9191bd;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover{
+    background-color: #c7c7f3;
+    color: #fff;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;  /*Quitar bordes*/
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+ 
+.form label i{
+    color: #a7a7a7;
+}
+
+.form input[type="submit"]{
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+form input[type="submit"]:hover{
+    background-color: #7a7a9a;
+}
+
+.hide{   
+    /*display: none;*/ /* Ocultar la clase Hide (formulario de Iniciar Sesión) pero sin una transición*/
+    position: absolute; /* Ocultar la clase Hide (formulario de Iniciar Sesión) detras del formulario de Registrarse */
+    transform: translateY(-300%);  /* Manda el formulario de Iniciar Sesión para arriba (Lo oculta en la parte de arriba) si fuera positivo, lo madaría abajo*/
+}
+
+/* Responsive Form*/
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 10px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-information{
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+

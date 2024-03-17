@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Style_Login.css"/>  <!-- Importar CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Importar Fonts de Google (Tipo de letra)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Importar tipo de letra Montserrat-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Importar iconos desde box Icons-->
+    <!--Form validator-->        
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script type="text/JavaScript" src="JS/jquery-validation/jquery.form-validator.min.js"></script> -->
+     <!-- DatePicker -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Login y Registro</title> -->
+</head>
+<body> 
+    <!-- Formulario para Registrarse-->
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para descargar archivos, por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una cuenta</h2>
+                <!-- <div class="icons">
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-microsoft' ></i>
+                </div> -->
+                <p>Por favor ingresa tu nombre de usuario, número de telefono, correo y contraseña.</p>
+                <form class="form" method="post" action="PHP/create.php">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input id="user_name" type="text" placeholder="Nombre de usuario" name="nombre" required>
+                    </label>
+                    <!-- <label>
+                        <i class='bx bxs-baby-carriage'></i>
+                        <input type="date" placeholder="Fecha de nacimiento" data-validation="date" name="fecha" data-validation-format="yyyy-mm-dd" required>
+                    </label>  -->
+                    <label>
+                        <i class='bx bxs-phone' ></i>
+                        <input type="text" placeholder="Número de teléfono" data-validation="number" name="telefono" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electrónico" name="email" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña" name="password" required>
+                    </label>
+                    <input type="submit" value="Registrarse" class="enviar">
+                </form>
+            </div>
+        </div>     
+    </div>
+
+
+    <!-- Formulario para Iniciar Sesión-->
+    <div class="container-form login hide">  <!-- Se agrega el hide para ocultarlo desde JavaScript, de tal forma que cuando se acceda a este link, solo aparezca un formulario-->
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡Bienvenido nuevamente!</h2>
+                <p>Si aún no tienes una cuenta, por favor registrate</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <!-- <div class="icons">
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-microsoft' ></i>
+                </div> -->
+                <p>Iniciar Sesión con una cuenta</p>
+                <form class="form" method="post" action="PHP/login.php">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña" name="password" required>
+                    </label>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>     
+    </div>
+    <script type="text/JavaScript" src="JS/Login.js"></script>  <!-- Importar JavaScript (Login.js)-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    background: url("../imagenes/Rojo.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: red;
+}
+
+#menu ul li:hover{      /*Cuando el mouse pase por encima de cualquier li se aplica esto*/
+    background: red;
+}
+
+.button-more{
+    background: red;
+}
+
+#sidebar h4{
+    background: red repeat-x;
+}
+
+.subir{
+    background: red;
+}
+
+#reloj{
+    border: 5px dashed red;
+}
+
+#envio:hover{
+    background: red;
+    color: aliceblue;
+}
+
+#exit:hover {
+    background: red;
+    color: white;
+}

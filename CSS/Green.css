@@ -1,0 +1,39 @@
+
+body{
+    background: url("../imagenes/MPLS\ Green.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: green;
+}
+
+#menu ul li:hover{      /*Cuando el mouse pase por encima de cualquier li se aplica esto*/
+    background: green;
+}
+
+.button-more{
+    background: green;
+}
+
+#sidebar h4{
+    background: green repeat-x;
+}
+
+.subir{
+    background: green;
+}
+
+#reloj{
+    border: 5px dashed green;
+}
+
+#envio:hover{
+    background: green;
+    color: aliceblue;
+}
+
+#exit:hover {
+    background: green;
+    color: white;
+}

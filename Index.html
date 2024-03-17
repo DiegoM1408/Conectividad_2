@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Pagina principal</title>
+
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="JS/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="JS/jquery-ui/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="JS/jquery-ui/jquery-ui.theme.min.css">
+        <script type="text/javascript" src="JS/jquery-ui/jquery-ui.min.js"></script>
+
+        <!--Slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!--
+        <link rel="stylesheet" href="JS/Jquery-bxslider/jquery.bxslider.css">
+        <script type="text/javascript" src="JS/Jquery-bxslider/jquery.bxslider.min.js"></script>
+        -->
+
+        <!-- Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
+        <link id="theme" rel="stylesheet" type="text/css" href="CSS/Blue.css"/>
+        <!--
+        <link id="theme" rel="stylesheet" type="text/css" href="CSS/Red.css"/> 
+        <link id="theme" rel="stylesheet" type="text/css" href="CSS/Blue.css"/>
+        -->
+
+        <!--Moment JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moments.js/2.29.4/locale/es.min.js" ></script>
+        <script type="text/javascript" src="JS/jquery-moments/moment.min.js"></script>
+        <script type="text/javascript" src="JS/jquery-moments/es.min.js"></script>
+
+        <!--Scripts (JavaScript)-->
+        <script type="text/JavaScript" src="JS/Main.js"></script>
+		<script
+            src="https://kit.fontawesome.com/81581fb069.js"
+            crossorigin="anonymous"
+        ></script>
+        
+    </head>
+    <body>
+        <div id="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+
+        <section id="global">
+
+            <!-- Cabecera-->
+            <header>
+                <div id="logo">
+                    <h1 id="titulo">Conectividad</h1>
+                </div>
+
+                <!-- <div class="container">
+                    <div class="search-input-box">
+                        <input type="text" placeholder="¿Qué quieres buscar?" />
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-magnifying-glass icon"> </i>
+                        </a>
+                        <ul class="container-suggestions">
+                            <li>sugerencia 1</li>
+                            <li>sugerencia 2</li>
+                            <li>sugerencia 3</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div id="clk">
+                    <!-- Cargar un reloj-->
+                    <div id="reloj"></div>   
+                </div>
+
+                <div class="clearfix"></div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                        <!-- <li><input type="button" value="Cerrar Sesión" id="exit"></li> -->
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Slider-->
+            <div id="slider">
+                <div class="topologia">
+                    <div><img height="580px" width="1700px" src="Imagenes/Aws.jpg" title="Aws"></div>
+                    <div><img height="580px" width="1700px" src="Imagenes/Base de datos.png" title="Base de datos"></div>
+                    <div><img height="530px" width="1700px" src="Imagenes/PG admin.png" title="PG Admin"></div>
+                  </div>
+            </div>
+
+            <!--Contenido-->
+            <section id="content">
+                <div id="posts">
+                    <!-- Cargar los post desde un json y no desde este article-->
+                    <!--
+                    <article class="post">
+                        <h2>Titulo articulo</h2>
+                        <span class="date">Fecha publicación</span>
+                        <p>
+                            Duis urna nisi, porttitor quis turpis ut, semper mattis nunc. 
+                            Quisque nec tincidunt neque. Pellentesque facilisis, odio quis 
+                            feugiat lobortis, nibh felis congue enim, ac iaculis metus nisi 
+                            sit amet ligula. Mauris eget sagittis tellus. Nam felis tellus, 
+                            dignissim quis risus at, faucibus luctus est. Duis nec suscipit nibh. 
+                            Proin varius mauris tellus, non ultricies velit finibus eget. 
+                            Sed vitae facilisis velit. Quisque aliquet, massa eget venenatis scelerisque, 
+                            mauris leo condimentum eros, eget volutpat dui mi faucibus massa. 
+                            Curabitur elit tortor, fermentum eget rutrum et, pulvinar sed nisi. 
+                            Cras ornare ex ut commodo dignissim.
+                        </p>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                    -->
+                    <!-- <input type="button" value="Cerrar Sesión" id="exit"> -->
+                </div>
+
+
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4>Autores</h4>
+                        <img src="Imagenes/Diego.jpg" alt="Autor 1"/>
+                        <p>
+                            Diego Martínez - 1401431
+                        </p>
+                        <br></br>
+                        <img src="Imagenes/Cesar.jpg" alt="Autor 2"/>
+                        <p>
+                            César González - 1401404
+                        </p>
+                    </div>
+
+                    <!--
+                    <div id="login">
+                        <h4>Identficate</h4>
+                        <form>
+                            <label for="names">
+                                Nombre
+                            </label>
+                            <input type="texts" name="names" id="form_name"/>
+
+                            <label for="emails">
+                                Correo
+                            </label>
+                            <input type="emails" name="emails" id="form_email"/>
+
+                            <label for="passwords">
+                                Contraseña
+                            </label>
+                            <input type="passwords" name="passwords" id="form_password"/>
+
+                            <br>
+                            <br>
+                            <input type="submit" id="envio" value="Enviar"/>
+                        </form>
+                    </div>
+                    
+
+                    <div id="usuario">
+                        <h4>Hola visitante</h4>
+                        <p><br></p>
+                    </div>
+                    -->
+
+                </aside>
+
+                <div class="clearfix"></div>
+            </section>
+        </section>
+        <footer>
+            Software by Diego Martínez y César González &copy;
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>

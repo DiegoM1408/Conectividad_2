@@ -1,0 +1,38 @@
+body{
+    background: url("../imagenes/MPLS\ azul.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: blue;
+}
+
+#menu ul li:hover{      /*Cuando el mouse pase por encima de cualquier li se aplica esto*/
+    background: blue;
+}
+
+.button-more{
+    background: blue;
+}
+
+#sidebar h4{
+    background: blue repeat-x;
+}
+
+.subir{
+    background: blue;
+}
+
+#reloj{
+    border: 5px dashed blue;
+}
+
+#envio:hover{
+    background: blue;
+    color: aliceblue;
+}
+
+#exit:hover {
+    background: blue;
+    color: white ;
+}

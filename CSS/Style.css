@@ -1,0 +1,675 @@
+/* La clase asterisco son estilos que se aplican a todo el documento*/
+*{              
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: gainsboro;
+    box-shadow: 0px 0px 10px black;
+}
+
+#logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    color: beige;
+    text-align: center;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+#clk{
+    float: right;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+#reloj{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+#menu{
+    font-family: Helvetica, Arial, sans-serif;
+    background: gray;
+    width: 98%;
+    text-transform: uppercase;  /*Pone el texto en mayuscula*/
+    margin-bottom: 15px;
+    margin-left: 13px;
+    margin-right: 13px;
+    line-height: 60px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;   /*Pone los elementos uno al lado de otro*/ 
+    transition: all 300ms;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#menu input{
+    padding: 12px 18px;
+}
+
+
+#posts{
+    margin-left: 15px;
+    width: 40%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 60px;
+    color: #333;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+#sidebar{
+    width: 53%;
+    float: right;
+    margin-right: 22px;
+}
+
+#sidebar h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    height: 20px;
+    color: white;
+    line-height: 20px;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 2px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Login Falso*/
+form input[type="texts"],
+form input[type="passwords"],
+form input[type="emails"]{
+    padding: 15px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+/*Registro*/
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+select{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(7, 7, 7, 0.7);
+    margin: 0px auto;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 540px !important;
+
+}
+
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#to-green{
+    background: green;
+    cursor: pointer;
+}
+
+#to-red{
+    background: red;
+    cursor: pointer;
+}
+
+#to-blue{
+    background: blue;
+    cursor: pointer;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#box{
+    float: left;
+    width: 98%;
+    margin-left: 10px;
+}
+
+#fotos table{
+    background: gray;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    margin-left: 15px;
+    width: 97%;
+    height: 100%;
+}
+
+#universidad h3{
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+}
+
+#universidad img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+}
+
+#form_contact label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-error{
+    text-align: center;
+    font-size: 15px;
+    background: darkorchid;
+    color: whitesmoke;
+    padding: 13px;
+    width: 65%;
+}
+
+
+/* Buscador*/
+
+.container {
+	max-width: 600px;
+	margin: 5px auto;
+    color: white;
+}
+
+.search-input-box {
+    margin-top: 15px;
+    margin-right: 20px;
+	width: 670px;
+    margin-left: 45px;
+	background-color: #2f3640;
+	border-radius: 5px;
+	position: absolute;
+	color: blue;
+	box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input-box input {
+	width: 200px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	height: 55px;
+	padding: 0 60px 0 20px;
+	font-size: 18px;
+}
+
+.icon {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	font-size: 22px;
+	cursor: pointer;
+	color: #0d141f;
+}
+
+/* Contenedor de sugerencias */
+.container-suggestions {
+	max-height: 280px;
+	opacity: 0;
+	pointer-events: none;
+	padding: 0;
+	overflow-y: auto;
+}
+
+.search-input-box.active .container-suggestions {
+	opacity: 1;
+	pointer-events: auto;
+	padding: 10px 8px;
+}
+
+.search-input-box.active .container-suggestions li {
+	display: block;
+}
+
+.container-suggestions li {
+	list-style: none;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 5px;
+	display: none;
+}
+
+.container-suggestions li:hover{
+    background-color: #414b57;
+}
+
+
+#depend{
+    width: 92%;
+    height: 100%;
+}
+
+#slider{
+    margin-left: 13px;
+    margin-right: 18px;
+}
+
+#exit{
+    /* background-color: #9191bd; */
+    color: black;
+    display: block;
+    border-radius: 20px;
+    border: none;
+    padding: 20px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+}
+
+/* Responsive Form*/
+
+@media screen and (max-width: 1568px) {
+
+
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    #sidebar{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    html {
+        font-size: 20px;
+    }
+    #reloj{
+        margin-top: 6px;
+        margin-left: 6px;
+        font-size: 25px;
+        width: 100%;
+        height: 55px;
+        padding: 5px;
+        text-align: center; /* Alinea el texto horizontalmente */
+        display: flex; /* Activa el modelo de diseño flexbox */
+        align-items: center; /* Alinea verticalmente el contenido al centro */
+        justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    }
+
+    #logo {
+        width: 45%;
+        height: auto;
+        font-size: 12px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; */
+    }
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    .post{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .post h2{
+        font-size: 30px;
+    }
+
+    .post p{
+        font-size: 20px;
+    }
+
+    #sidebar{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    html {
+        font-size: 20px;
+    }
+    #reloj{
+        margin-top: 6px;
+        margin-left: 6px;
+        font-size: 25px;
+        width: 90%;
+        height: 55px;
+        padding: 5px;
+        text-align: center; /* Alinea el texto horizontalmente */
+        display: flex; /* Activa el modelo de diseño flexbox */
+        align-items: center; /* Alinea verticalmente el contenido al centro */
+        justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    }
+
+    #logo {
+        width: 40%;
+        height: auto;
+        font-size: 12px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; */
+    }
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    .post{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .post h2{
+        font-size: 30px;
+    }
+
+    .post p{
+        font-size: 20px;
+    }
+
+    #sidebar{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    html {
+        font-size: 14px;
+    }
+
+    #reloj{
+        margin-top: 6px;
+        margin-left: 6px;
+        font-size: 25px;
+        width: auto;
+        height: 55px;
+        padding: 5px;
+        text-align: center; /* Alinea el texto horizontalmente */
+        display: flex; /* Activa el modelo de diseño flexbox */
+        align-items: center; /* Alinea verticalmente el contenido al centro */
+        justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    }
+
+    #logo {
+        width: 37%;
+        height: 20%;
+        font-size: 9px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; */
+    }
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    .post{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .post h2{
+        font-size: 30px;
+    }
+
+    .post p{
+        font-size: 20px;
+    }
+
+    #sidebar{
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width: 448px) {
+    html {
+        font-size: 14px;
+    }
+
+    #reloj{
+        margin-top: 6px;
+        margin-left: 6px;
+        font-size: 20px;
+        width: auto;
+        height: 55px;
+        padding: 5px;
+        text-align: center; /* Alinea el texto horizontalmente */
+        display: flex; /* Activa el modelo de diseño flexbox */
+        align-items: center; /* Alinea verticalmente el contenido al centro */
+        justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    }
+
+    #logo {
+        width: 35%;
+        height: 20%;
+        font-size: 8px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; */
+    }
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    .post{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .post h2{
+        font-size: 30px;
+    }
+
+    .post p{
+        font-size: 20px;
+    }
+
+    #sidebar{
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+
+    #reloj{
+        margin-top: 6px;
+        margin-left: 4px;
+        font-size: 10px;
+        width: auto;
+        height: 55px;
+        padding: 5px;
+        text-align: center; /* Alinea el texto horizontalmente */
+        display: flex; /* Activa el modelo de diseño flexbox */
+        align-items: center; /* Alinea verticalmente el contenido al centro */
+        justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    }
+
+    #logo {
+        width: auto;
+        height: 20%;
+        font-size: 7px;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; */
+    }
+
+    #yanfri {
+        width: 300px;
+        height: 200px;
+    }
+
+    .post{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .post h2{
+        font-size: 30px;
+    }
+
+    .post p{
+        font-size: 20px;
+    }
+
+    #sidebar{
+        width: 45%;
+    }
+
+
+}
