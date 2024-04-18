@@ -2,7 +2,7 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-$servername = "database-1.c920o00syb4q.us-east-1.rds.amazonaws.com";
+$servername = "database-2.clkwscwgub55.us-east-2.rds.amazonaws.com";
 $username = "admin";
 $password = "Colombia123_";
 $database = "users"; 
